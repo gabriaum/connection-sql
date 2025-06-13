@@ -1,11 +1,7 @@
 package com.henryfabio.sqlprovider.connector.type.impl;
 
 import com.henryfabio.sqlprovider.connector.type.RemoteDatabaseType;
-import lombok.Getter;
-import lombok.experimental.SuperBuilder;
 
-@Getter
-@SuperBuilder
 public final class GenericSQLDatabaseType extends RemoteDatabaseType {
 
     /**
