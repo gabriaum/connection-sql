@@ -9,10 +9,10 @@ import lombok.Builder;
 public final class MySQLDatabaseType extends RemoteDatabaseType {
 
     @Builder
-    public MySQLDatabaseType(String address, String username, String password, String database) {
+    public MySQLDatabaseType(String address, String username, String password, String database, int port) {
         super(
                 "com.mysql.jdbc.Driver",
-                "jdbc:mysql://" + address + "/" + database,
+                "jdbc:mysql://" + address + ":" + port + "/" + database,
                 username,
                 password
         );

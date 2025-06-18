@@ -17,8 +17,7 @@ public abstract class RemoteDatabaseType extends SQLDatabaseType {
     private final HikariDataSource dataSource = new HikariDataSource();
 
     public RemoteDatabaseType(
-            String driverClassName, String jdbcUrl, String username, String password
-    ) {
+            String driverClassName, String jdbcUrl, String username, String password) {
         super(driverClassName, jdbcUrl);
         dataSource.setDriverClassName(driverClassName);
         dataSource.setUsername(username);
